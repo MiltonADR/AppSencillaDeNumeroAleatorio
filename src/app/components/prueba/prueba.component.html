@@ -1,0 +1,32 @@
+<nav class="navbar navbar-dark mi-bg-color">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">AleatorioApp</span>
+  </div>
+</nav>
+<div class="container">
+  <h1 class="text-center mt-3">Prueba tu suerte!</h1>
+
+  <div class="formi">
+    <div class="col-md-6 col-sm-12">
+      <div class="login-form">
+        <form (ngSubmit)="compararNumero()">
+          <div class="form-group">
+            <label>Ingresa un número:</label>
+            <input
+              type="number"
+              class="form-control mt-2"
+              name="numeroIngresado"
+              [(ngModel)]="numeroIngresado"
+              placeholder="Ingrese numero"
+            />
+          </div>
+          <button type="submit" class="btn btn-success mt-2">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="text-center alert alert-primary mt-3">
+    <small>El numero tiene que ser mayor a 0 y menor o igual a 10</small>
+  </div>
+  <h2 class="text-center mt-4">{{ estado }}</h2>
+</div>

@@ -1,0 +1,9 @@
+.formi {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.mi-bg-color {
+  background-color: #008f8c;
+}
